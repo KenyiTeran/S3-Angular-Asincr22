@@ -1,0 +1,12 @@
+<section *ngIf="username && lastname && email">
+    Mi perfil
+
+    <ul>
+        <li><p>Nombre de usuario: <b>{{username}}</b></p></li>
+        <li><p>Apellidos de usuario: <b>{{lastname}}</b></p></li>
+        <!-- <li><p>Correo electronico: <b>{{email}}</b></p></li> -->
+    </ul>
+</section>
+<section *ngIf="!username || !lastname || !email">
+    <app-error></app-error>
+</section>
